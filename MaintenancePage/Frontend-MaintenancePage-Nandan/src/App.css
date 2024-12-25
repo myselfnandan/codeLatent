@@ -1,0 +1,115 @@
+/*#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}*/
+
+
+header{
+  display:flex;
+  place-items: center;
+  justify-content: space-between;
+  margin:2vh;
+  margin-top:0px;
+}
+
+.rightHeader{
+  display: flex;
+  align-items: center;
+}
+
+.rightHeader a ,
+.rightHeader button{
+  padding-right: 1rem;
+}
+
+#companyName{
+  font-size: 1.7rem;
+}
+
+main{
+  place-items: center;
+  margin:2rem;
+  border-radius:1.6rem;
+}
+
+
+footer div{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+footer img{
+  max-width: 2rem; 
+  padding-left: 3px;
+}
+
+footer p{
+  text-align: center;
+  margin-top: 0px;
+  color: rgb(96, 95, 95);
+  font-size: small;
+}
+
+@media (max-width: 642px){
+  main p{
+    font-size:0.5rem;
+  }
+  main h1{
+    font-size:2em;
+  }
+  main h3{
+    font-size: 1em;
+  }
+  main img{
+    width: 100%;
+  }
+ 
+  #info-main{
+    font-size: 1.1em;
+    padding:3rem;
+    text-align: center;
+  }
+
+  .rightHeader a{
+    font-size: 0.7em; 
+    padding-right: 0.3rem;
+  }
+
+  button {
+    padding: 0.3em 1em;
+    font-size: 0.7em;
+  }
+  
+  #companyName{
+    font-size: 1.5rem;
+  }
+
+  header{
+    margin-bottom: 0px;
+  }
+
+  main{
+    margin-top: 0px;
+  }
+}
+
+h3{
+  margin: 0px;
+  display: inline-block;
+}
+
+.countdown-timer p{
+  font-size: 2em;
+}
+
+.countdown-timer{
+  text-align: center;
+}
+
+.countdown-timer h2{
+  display: inline-block;
+  margin-bottom: 2px;
+}
