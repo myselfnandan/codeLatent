@@ -27,6 +27,7 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <div className="bg-gray-100 py-12">
+      <p>Privacy Policy</p>
       <div className="w-full mx-auto px-10 lg:px-20">
         <h2 className="text-2xl font-bold text-center text-gray-900 mb-6 mt-8">What Our Graduates Say</h2>
         <div className="grid grid-wrap justify-center gap-8">

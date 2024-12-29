@@ -37,6 +37,7 @@ footer div{
   footer{
     padding-top: 2rem;
     padding-bottom:2rem;
+    place-items: center;
   }
 
   #CourseImg{

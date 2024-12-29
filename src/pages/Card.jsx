@@ -47,7 +47,7 @@ const Card = () => {
             <img
               src={card.image}
               alt={card.title}
-              className="w-full h-48 object-cover"
+              className="w-full h-48 object-contain bg-gray-100"
             />
             <div className="p-4">
               <p className="text-sm text-gray-500 font-semibold mb-2">
@@ -67,6 +67,13 @@ const Card = () => {
                   <p className="text-gray-800 font-medium">{card.author}</p>
                   <p className="text-sm text-gray-500">{card.date}</p>
                 </div>
+                <button
+                className="absolute bottom-4 right-4 bg-black text-white py-2 px-4 rounded-lg hover:bg-white hover:text-black hover:border-black
+                hover:border-2 focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50 w-fit-content"
+                onClick={() => alert(`You joined the waitlist for ${card.title}!`)}
+              >
+                Join Waitlist
+              </button>
               </div>
             </div>
           </div>

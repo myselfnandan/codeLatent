@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer className='bg-custom'>
-      <p>Connect Us</p>
+      <p className='pb-2'>© 2024 codelatent.com</p>
       <div>
       <a class="footerLogo" href='https://www.instagram.com/codelatent?igsh=d24zcHo0ODB1MG1l' target='_blank'>
         <img src="insta.png" alt="Instagram"/>
@@ -21,7 +21,8 @@ const Footer = () => {
         <img src="twitter.png" alt="Twitter"/>
       </a>
       </div>
-      <p>© 2024 codelatent.com</p>
+      <p className='mt-4 mb-1 text-sm'><a href='#'>Privacy Policy</a></p>
+      <p className='max-w-xl text-[0.7rem]'>Your privacy is our priority. We are committed to protecting your personal data and ensuring that your experience with us is safe and secure. Read our detailed privacy policy to understand how we manage your information.</p>
       </footer>
   );
 };

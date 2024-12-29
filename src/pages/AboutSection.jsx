@@ -61,7 +61,7 @@ const AboutSection = () => {
                 <img
                   src={image}
                   alt={title}
-                  className="rounded-lg shadow-lg w-full h-64 object-cover"
+                  className="rounded-lg shadow-lg w-full h-64 object-contain bg-gray-100"
                 />
               </div>
             </div>
