@@ -131,7 +131,7 @@ export default function Landing() {
             </div>
           </div>
           <div className='flex items-center justify-center h-auto max-w'>
-            <img src="src\assets\Programming-amico.png" alt="" className=' md:w-3/4 md:h-auto h-auto w-auto  ' />
+            <img src="Programming-amico.png" alt="" className=' md:w-3/4 md:h-auto h-auto w-auto  ' />
           </div>
         </div>
         <div
@@ -148,7 +148,7 @@ export default function Landing() {
         </div>
       </div>
       <div className=" min-h-[70vh] flex justify-center items-center mt-[5vh] pb-[5vh]">
-        <div className="mainBox w-full max-width-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl bg-[#9dbdba]  p-6 border rounded-lg shadow-md
+        <div className="mainBox w-full max-width-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl p-6 border rounded-lg shadow-md
         cursor-pointer transform transition-all duration-300 hover:scale-105">
           <p className="font-bold text-xl sm:text-lg md:text-2xl mb-7 text-center border-b-black border-b-2 pb-3">Our Courses</p>
           <div className="overflow-hidden flex flex-col md:flex-row">

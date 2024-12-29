@@ -59,7 +59,7 @@ const Card = () => {
               <p className="text-gray-600 mb-4">{card.description}</p>
               <div className="flex items-center gap-3">
                 <img
-                  src="src\assets\code-lint-jpg-logo.jpg"
+                  src="code-lint-jpg-logo.jpg"
                   alt={card.author}
                   className="w-10 h-10 rounded-full"
                 />
