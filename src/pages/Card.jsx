@@ -26,7 +26,7 @@ const Card = () => {
       id: 3,
       title: "Backend Development Course",
       description:
-        "This course dives into the server-side development of web applications. You'll learn to build APIs, manage databases, and handle server-side logic with backend technologies like Node.js, Python (Django/Flask), Ruby on Rails, or PHP",
+        "This course dives into the server-side development of web applications. You'll learn to build APIs, manage databases, and handle server-side logic with backend technologies like Spring-Boot, or PHP",
       author: "CodeLatent Team",
       date: "Launching Soon",
       image: "Hand coding-bro.svg",
