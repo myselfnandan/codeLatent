@@ -23,7 +23,7 @@ const Header = () => {
         {menuItems.map((item) => (
           <span
             key={item}
-            className="cursor-pointer text-gray-800 hover:text-gray-500"
+            className="cursor-pointer text-blue-200 hover:text-blue-200"
           >
             {item}
           </span>
@@ -40,7 +40,7 @@ const Header = () => {
 
       {/* Overlay and Slide-in Menu */}
       <div
-        className={`fixed top-0 right-0 h-full bg-gray-200 w-52 shadow-lg z-20 flex flex-col  items-start pt-10 px-5 space-y-1 transition-transform duration-[600ms]  ${
+        className={`fixed top-0 right-0 h-full bg-blue-200 w-52 shadow-lg z-20 flex flex-col  items-start pt-10 px-5 space-y-1 transition-transform duration-[600ms]  ${
           menuOpen ? 'translate-x-0' : 'translate-x-full'
           
         }`}
@@ -48,7 +48,7 @@ const Header = () => {
         {menuItems.map((item) => (
           <span
             key={item}
-            className="cursor-pointer hover:text-gray-500 border-slate-800 border-2 rounded bg-black text-white px-1 py-1 gap-0 w-full"
+            className="cursor-pointer hover:text-blue-200 border-slate-800 border-2 rounded bg-black text-white px-1 py-1 gap-0 w-full"
             onClick={closeMenu}
           >
             {item}
