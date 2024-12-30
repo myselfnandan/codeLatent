@@ -4,7 +4,7 @@ import '.././index.css';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const menuItems = ['Join Now','Home', 'About', 'Contact Us'];
+  const menuItems = ['Home', 'About', 'Course','Get Started'];
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);

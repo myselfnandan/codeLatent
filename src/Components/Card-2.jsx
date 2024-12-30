@@ -38,7 +38,7 @@ const reasons = [
   },
 ];
 
-const AboutSection = () => {
+const CardCode = () => {
   return (
     <div className="bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -72,4 +72,4 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection;
+export default CardCode;

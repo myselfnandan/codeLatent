@@ -54,7 +54,7 @@ const Card = () => {
   ];
 
   return (
-    <div className="p-4 mb-7">
+    <div className="p-4 bg-white">
       <p className="font-bold text-2xl mb-8 text-center mt-7">Upcoming Projects</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:px-5 sm:mb-7">
         {cardData.map((card) => (
