@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import {Link} from 'react-router-dom';
 
+
 function CourseSec() {
   const cardWrapperRef = useRef(null);
   const featureCardsRef = useRef([]);
@@ -45,12 +46,12 @@ function CourseSec() {
 
   return (
     <>
-      <section className="flex flex-wrap justify-between items-center p-16 bg-gradient-to-br from-blue-900 via-purple-900 to-black animate-gradient-xy min-h-[70vh]">
-        <div className="flex-1 pr-8">
-          <h1 className="mt-20 text-white text-4xl mb-4 font-bold">
+      <section className="flex flex-wrap flex-col-reverse md:flex-row justify-between items-center p-6 md:p-16 bg-gradient-to-br from-blue-900 via-purple-900 to-black animate-gradient-xy min-h-[70vh] mt-10 sm:pt-15">
+        <div className="flex-1 md:pr-8 text-center md:text-left">
+          <h1 className="mt-10 md:mt-20 text-white text-2xl md:text-4xl mb-4 font-bold">
             DSA Mastery: Cracking the Code
           </h1>
-          <p className="text-blue-200 text-lg mb-8 leading-relaxed">
+          <p className="text-blue-200 text-base md:text-lg mb-8 leading-relaxed">
             Master the core concepts of Data Structures and Algorithms (DSA)
             with Java through hands-on learning and interactive problem-solving.
             This course is designed to build a strong foundation in DSA,
@@ -58,15 +59,14 @@ function CourseSec() {
             real-world coding challenges.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mt-8">
             {["Live Sessions", "1:1 Doubt Support", "Regular Assessments"].map(
               (title, index) => (
                 <div
-                  className="bg-white p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300"
+                  className="bg-white p-4 md:p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-300"
                   key={index}
-                  ref={(el) => (featureCardsRef.current[index] = el)}
                 >
-                  <div className="text-4xl text-indigo-600 mb-4">
+                  <div className="text-3xl md:text-4xl text-indigo-600 mb-4">
                     <i
                       className={`fas ${
                         index === 0
@@ -77,35 +77,36 @@ function CourseSec() {
                       }`}
                     ></i>
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                  <h3 className="text-sm md:text-lg font-semibold text-gray-800 mb-2">
                     {title}
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 text-xs md:text-sm">
                     {index === 0 &&
                       "Interactive live classes with expert instructors."}
                     {index === 1 &&
                       "Round-the-clock assistance to overcome challenges."}
-                    {index === 2 && "Periodic evaluations to track your progress."}
+                    {index === 2 &&
+                      "Periodic evaluations to track your progress."}
                   </p>
                 </div>
               )
             )}
           </div>
 
-          <div className="mt-[4rem]">
+          <div className="mt-6 md:mt-[4rem]">
             <Link to="/form">
-            <button className="inline-block px-8 py-4 w-52 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-700 transition duration-300">
-              Start Now
-            </button>
+              <button className="inline-block px-6 md:px-8 py-3 md:py-4 w-44 md:w-52 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-700 transition duration-300">
+                Start Now
+              </button>
             </Link>
           </div>
         </div>
 
-        <div className="flex-1 text-right">
+        <div className="flex-1 mb-6 md:mb-0 text-center">
           <img
             src="hero-image.png"
             alt="Learning Platform Interface"
-            className="max-w-full h-auto rounded-lg"
+            className="w-[80%] md:max-w-full h-auto rounded-lg mx-auto"
           />
         </div>
       </section>
@@ -124,27 +125,15 @@ function CourseSec() {
           </p>
         </section>
 
-        <section className="relative">
+      <section className="relative">
       <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
         Course Syllabus
       </h2>
-      <button
-        className="absolute top-1/2 left-0 transform -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg hover:bg-indigo-600 hover:text-white z-10"
-        onClick={() => handleScroll("left")}
-      >
-        &#9664;
-      </button>
-      <button
-        className="absolute top-1/2 right-0 transform -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg hover:bg-indigo-600 hover:text-white z-10"
-        onClick={() => handleScroll("right")}
-      >
-        &#9654;
-      </button>
-      <div className="overflow-hidden relative py-6">
+      
+      <div className="overflow-x-auto relative py-6">
        <div
-          className="flex gap-12"
+          className="flex gap-6 w-max"
           style={{
-            overflow: "hidden",
             scrollBehavior: "smooth",
           }}
           ref={cardWrapperRef}
@@ -164,7 +153,7 @@ function CourseSec() {
           },
           {
             title: "Module 2",
-            topics: ["Recursion", "Quick Sort", "OOPs", "Linked Lists", "Revision"],
+            topics: ["Recursion", "Quick Sort and Other Sorting Techniques", "OOPs", "Linked Lists", "Revision"],
           },
           {
             title: "Module 3",
@@ -196,7 +185,7 @@ function CourseSec() {
           },
         ].map((module, idx) => (
           <div
-            className="flex-none bg-white p-6 rounded-lg shadow-md w-72"
+            className="flex-none bg-white p-6 rounded-lg shadow-md md:w-72"
             key={idx}
           >
             <div className="bg-indigo-600 text-white p-4 rounded-t-md font-bold">

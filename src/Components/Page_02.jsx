@@ -8,39 +8,45 @@ const  Page_02= () => {
   const teamMembers = [
     {
       name: "Nandan R",
-      role: "Developer",
-      bio: "A Junior Software Developer",
+      role: "Software Developer",
+      bio: "Designer | Problem Solver | Technology Enthusiast",
+      expertise: "Expertise: React, Tailwind, Front-End Frame Works, Responsive Designs",
       image: "user.svg"
     },
     {
       name: "Nirma Sahani",
       role: "Social Media Manager",
-      bio: "Scheduling posts, engaging with the audience",
+      bio: "Brand Strategist | Digital Storyteller",
+      expertise: "Expertise: Social Media Handling, Marketing Skills, Design",
       image: "user.svg"
     },
     {
       name: "Rahul",
       role: "Front-End Devloper",
-      bio: "Former Software Developer",
+      bio: "UI/UX Enthusiast | Code and Design Advocate",
+      expertise: "Expertise: Typescript, React, Database, Front-End Tools",
       image: "user.svg"
     },
     {
       name: "Amaan Ali",
-      role: "Student Success Coach",
-      bio: "Dedicated to helping students achieve their goals",
+      role: "Full Stack Developer",
+      bio: "End-to-End Solution Expert",
+      expertise: "Expertise: Java, Es6, Database, React, Frameworks",
       image: "user.svg"
     },
     {
       name: "Tanweer",
       role: "Curriculum Designer",
-      bio: "EdTech specialist with passion for innovation",
+      bio: "Educator | Learning Experience Innovator",
+      expertise: "Expertise: Modules, Plans, Units, Sessions",
       image: "user.svg"
     },
     
     {
       name: "Gayathri",
       role: "Student Success Coach",
-      bio: "Dedicated to helping students achieve their goals",
+      bio: "Empowering Learners to Reach Their Potential",
+      expertise: "Expertise: DSA, Career Planning, Academic Support",
       image: "user.svg"
     }
   ];
@@ -71,8 +77,9 @@ const  Page_02= () => {
                   />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800">{member.name}</h3>
-                <p className="text-blue-600 mb-2">{member.role}</p>
+                <p className="text-blue-600 mb-1">{member.role}</p>
                 <p className="text-gray-600">{member.bio}</p>
+                <p className="text-gray-600">{member.expertise}</p>
               </motion.div>
             ))}
           </div>

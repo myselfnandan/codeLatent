@@ -1,12 +1,10 @@
 import React from "react";
 import PrivacyComp from "../../Components/PrivacyComp.jsx";
-import CodeHeader from "../../Components/CodeHeader.jsx";
 import { Link } from "react-router-dom";
 
 const PrivacyPolicy = () => {
   return (
     <>
-    <CodeHeader/>
     <PrivacyComp/>
     <div className="p-4 md:p-8 lg:p-12 bg-gray-100">
       <h2 className="text-2xl font-bold mb-4 text-black">Rules</h2>

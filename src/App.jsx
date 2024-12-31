@@ -7,6 +7,9 @@ import About from "./pages/Landing/About.jsx";
 import Bootcamp from "./pages/Landing/Bootcamp.jsx";
 import Course from "./pages/Landing/Course.jsx";
 import Form from "./pages/Landing/Form.jsx";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import Login from "./pages/Landing/Login.jsx";
+
 
 function Scroll() {
     const location = useLocation();
@@ -66,6 +69,14 @@ function Scroll() {
         element={
           <Layout>
             <Form/>
+          </Layout>
+        }
+        />
+        <Route
+        path="/login"
+        element={
+          <Layout>
+            <Login/>
           </Layout>
         }
         />

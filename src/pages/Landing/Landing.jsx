@@ -5,7 +5,6 @@ import Card from "../../Components/Card.jsx";
 import Testimonials from "../../Components/Testimonials.jsx";
 import { Link } from "react-router-dom";
 import CardCode from '../../Components/Card-2.jsx';
-import CodeHeader from '../../Components/CodeHeader.jsx';
 
 export default function Landing() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -13,8 +12,6 @@ export default function Landing() {
   return (
     
     <div className="inset-0 bg-gradient-to-br from-blue-900 via-purple-900 to-black animate-gradient-xy md:mt-10">
-      <CodeHeader/>
-
       <div className="relative isolate px-6 pt-14 lg:px-8 ">
         <div
           aria-hidden="true"
