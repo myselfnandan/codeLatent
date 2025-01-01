@@ -35,7 +35,7 @@ export default function InstructorSection() {
 
             <div className="flex gap-4 justify-center lg:justify-start mt-6">
               {/* <SocialLink href="#" icon={<Github />} label="GitHub" /> */}
-              <SocialLink href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A105728565&keywords=code%20latent&origin=RICH_QUERY_SUGGESTION&position=0&searchId=d52ff825-cb2d-48c3-b255-3a2736b03787&sid=N~9&spellCorrectionEnabled=false"  icon={<Linkedin />} label="LinkedIn" 
+              <SocialLink href="https://www.linkedin.com/in/piyush-choudhary3008/"  icon={<Linkedin />} label="LinkedIn"
               />
               <SocialLink href="mailto:aashuchoudhary52@gmail.com" icon={<Mail />} label="Email" />
             </div>

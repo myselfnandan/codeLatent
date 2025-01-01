@@ -62,7 +62,7 @@ const Page_03 = () => {
               <img
                 src={member.image}
                 alt={member.name}
-                className="object-cover object-center w-full h-full max-w-[300px] max-h-[300px] mx-auto" // **Changes: Added max-width and max-height**
+                className="object-cover object-center w-full h-full max-w-[300px] max-h-[300px] mx-auto"
               />
             </div>
             <div className="p-6">

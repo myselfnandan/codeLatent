@@ -11,35 +11,35 @@ const  Page_02= () => {
       role: "Software Developer",
       bio: "Designer | Problem Solver | Technology Enthusiast",
       expertise: "Expertise: React, Tailwind, Front-End Frame Works, Responsive Designs",
-      image: "user.svg"
+      image: "nandan.png"
     },
     {
       name: "Nirma Sahani",
       role: "Social Media Manager",
       bio: "Brand Strategist | Digital Storyteller",
       expertise: "Expertise: Social Media Handling, Marketing Skills, Design",
-      image: "user.svg"
+      image: "nirma.png"
     },
     {
       name: "Rahul",
       role: "Front-End Devloper",
       bio: "UI/UX Enthusiast | Code and Design Advocate",
       expertise: "Expertise: Typescript, React, Database, Front-End Tools",
-      image: "user.svg"
+      image: "rahul.png"
     },
     {
       name: "Amaan Ali",
       role: "Full Stack Developer",
       bio: "End-to-End Solution Expert",
       expertise: "Expertise: Java, Es6, Database, React, Frameworks",
-      image: "user.svg"
+      image: "amaan.png"
     },
     {
-      name: "Tanweer",
+      name: "Tanweer Raza",
       role: "Curriculum Designer",
       bio: "Educator | Learning Experience Innovator",
       expertise: "Expertise: Modules, Plans, Units, Sessions",
-      image: "user.svg"
+      image: "tanweer.png"
     },
     
     {
@@ -47,15 +47,20 @@ const  Page_02= () => {
       role: "Student Success Coach",
       bio: "Empowering Learners to Reach Their Potential",
       expertise: "Expertise: DSA, Career Planning, Academic Support",
-      image: "user.svg"
+      image: "gayathri.png"
     }
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">     
-      
+    <div className="min-h-screen bg-gray-50">  
+
       {/* Team Section */}
       <section className="py-20 bg-white">
+      <div className="max-w-6xl mx-auto">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-800 mb-10">
+        Technical Team
+      </h2>
+      </div>
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {teamMembers.map((member, index) => (
@@ -71,9 +76,7 @@ const  Page_02= () => {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-[20vh] pl-10
-                    pt-10
-                     object-cover transition-transform hover:scale-110 duration-300"
+                    className="object-cover object-center w-full h-full max-w-[300px] max-h-[300px] mx-auto transition-transform hover:scale-110 duration-300"
                   />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800">{member.name}</h3>
